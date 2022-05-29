@@ -1,0 +1,214 @@
+:root {
+  --bg: #282a36;
+  --bg-input: #1d1e26;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --green: #50fa7b;
+  --primary-text: #f8f8f2;
+  --blue: #383a59;
+  --orange: #ffb86c;
+  --boder: #4c5067;
+}
+
+.theme--dracula {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  background-color: var(--bg) !important;
+  color: #ff5555 !important;
+}
+
+.theme--dracula i {
+  color: var(--primary-text) !important;
+}
+
+.theme--dracula h3[lang] {
+  color: var(--green) !important;
+}
+
+.theme--dracula *[lang="db-chitiet-button"] {
+  color: var(--orange) !important;
+}
+
+.theme--dracula div.desc > div.number {
+  color: var(--primary-text) !important;
+}
+
+.theme--dracula select {
+  cursor: pointer;
+  background-color: var(--bg-input) !important;
+  border-radius: 4px !important;
+  border-color: var(--pink) !important;
+  color: var(--pink) !important;
+}
+
+.theme--dracula select option {
+  background-color: var(--bg-input) !important;
+  color: var(--primary-text) !important;
+}
+
+.theme--dracula select option[selected="selected"] {
+  background-color: var(--pink) !important;
+  color: var(--bg-input) !important;
+}
+
+.theme--dracula rect {
+  fill: transparent !important;
+}
+
+.theme--dracula text.highcharts-axis-title {
+  fill: var(--green) !important;
+}
+
+.theme--dracula text[text-anchor="start"] {
+  fill: var(--orange) !important;
+}
+
+.theme--dracula g.highcharts-axis-labels text[text-anchor="middle"] {
+  fill: var(--primary-text) !important;
+}
+
+.theme--dracula p {
+  color: var(--primary-text) !important;
+}
+
+.theme--dracula body {
+  background: var(--bg) !important;
+}
+
+.theme--dracula span[lang] {
+  color: var(--green);
+}
+
+.theme--dracula span.bold {
+  color: var(--primary-text);
+}
+
+.theme--dracula .caption-subject.bold {
+  color: var(--pink) !important;
+}
+
+.theme--dracula .box-df {
+  -webkit-transition: all 200ms ease-in-out !important;
+  transition: all 200ms ease-in-out !important;
+  border-radius: 10px !important;
+  background: linear-gradient(145deg, #2b2d3a, #242631) !important;
+  -webkit-box-shadow: 5px 5px 2px #21222c, -5px -5px 2px #2f3240 !important;
+          box-shadow: 5px 5px 2px #21222c, -5px -5px 2px #2f3240 !important;
+  background-color: var(--bg) !important;
+}
+
+.theme--dracula .box-df:hover {
+  background: linear-gradient(145deg, #242631, #2b2d3a) !important;
+}
+
+.theme--dracula .portlet-title {
+  border-color: var(--boder) !important;
+}
+
+.theme--dracula input[type="text"] {
+  border: 1px solid var(--pink) !important;
+  background-color: var(--bg-input) !important;
+  color: var(--pink) !important;
+}
+
+.theme--dracula input[type="text"]::-webkit-input-placeholder {
+  color: var(--pink) !important;
+}
+
+.theme--dracula input[type="text"]:-ms-input-placeholder {
+  color: var(--pink) !important;
+}
+
+.theme--dracula input[type="text"]::-ms-input-placeholder {
+  color: var(--pink) !important;
+}
+
+.theme--dracula input[type="text"]::placeholder {
+  color: var(--pink) !important;
+}
+
+.theme--dracula i.fa.fa-search {
+  color: var(--pink) !important;
+}
+
+.theme--dracula .header {
+  background-color: var(--bg) !important;
+}
+
+.theme--dracula .header a {
+  color: var(--primary-text) !important;
+}
+
+.theme--dracula .main-content {
+  background-color: var(--bg) !important;
+}
+
+.theme--dracula .panel {
+  padding: 10px;
+  background-color: transparent !important;
+}
+
+.theme--dracula .panel > div,
+.theme--dracula .panel tr {
+  background-color: transparent !important;
+}
+
+.theme--dracula .panel .color-active {
+  color: var(--green) !important;
+}
+
+.theme--dracula .panel div.name {
+  color: var(--primary-text) !important;
+}
+
+.theme--dracula .panel .panel-heading span {
+  color: var(--pink) !important;
+}
+
+.theme--dracula .panel td[width="20%"] div.text-center {
+  color: var(--purple) !important;
+}
+
+.theme--dracula .user-account-info.dropdown-menu {
+  border-radius: 4px !important;
+  background-color: var(--purple) !important;
+  color: var(--primary-text) !important;
+}
+
+.theme--dracula .user-account-info.dropdown-menu .us-links > li:hover {
+  background-color: var(--bg) !important;
+}
+
+.theme--dracula .user-account-info.dropdown-menu .us-links > li:not(:last-child) {
+  border-bottom: 1px solid var(--primary-text) !important;
+  -webkit-transition: all 200ms ease !important;
+  transition: all 200ms ease !important;
+}
+
+.theme--dracula .user-account-info.dropdown-menu .us-links > li:first-child {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+.theme--dracula .user-account-info.dropdown-menu .us-links > li:last-child {
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  border-bottom: unset;
+}
+
+.theme--dracula .user-account-info.dropdown-menu::after {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  right: auto;
+  display: inline-block !important;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid var(--purple);
+  border-left: 7px solid transparent;
+  content: "";
+}
+/*# sourceMappingURL=theme.css.map */
