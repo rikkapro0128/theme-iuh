@@ -1,19 +1,42 @@
 :root {
   --bg: #282a36;
-  --bg-input: #1d1e26;
+  --bg-s2: #22212c;
+  --bg-input: #40455a;
   --pink: #ff79c6;
   --purple: #bd93f9;
   --red: #ff5555;
   --green: #50fa7b;
   --primary-text: #f8f8f2;
+  --gray-text: #8a8fa8;
   --blue: #383a59;
   --orange: #ffb86c;
-  --boder: #4c5067;
+  --yellow: #ffff80;
+  --border: #4c5067;
+  --cyan: #80ffea;
+  --pl-holder: #a9aec3;
 }
 
 .theme--dracula {
   user-select: none;
   -webkit-user-drag: none;
+  background-color: var(--bg) !important;
+  .btn {
+    &.btn-action {
+      color: #000 !important;
+      i {
+        color: inherit !important;
+      }
+      background: linear-gradient(
+        135deg,
+        var(--purple) 0,
+        var(--cyan) 100%
+      ) !important;
+    }
+    &:hover {
+      box-shadow: 4px 4px rgba(255, 255, 255, 0.1) !important;
+      opacity: 0.75 !important;
+    }
+  }
   i {
     color: var(--primary-text) !important;
   }
@@ -85,13 +108,27 @@
   .portlet-title {
     border-color: var(--boder) !important;
   }
-  background-color: var(--bg) !important;
+  .profile-userpic {
+    & > img {
+      box-shadow: 0 0 0 4px #1d1e26, 0 0 0 6px var(--purple) !important;
+    }
+    & > .text-center {
+      padding-top: 10px;
+      a {
+        color: var(--purple) !important;
+      }
+    }
+  }
   input[type="text"] {
-    border: 1px solid var(--pink) !important;
+    caret-color: var(--pink);
+    border: unset !important;
     background-color: var(--bg-input) !important;
-    color: var(--pink) !important;
+    color: var(--primary-text) !important;
     &::placeholder {
-      color: var(--pink) !important;
+      color: var(--pl-holder) !important;
+    }
+    &::selection {
+      color: var(--pink);
     }
   }
   i.fa.fa-search {
@@ -129,6 +166,61 @@
       div.text-center {
         color: var(--purple) !important;
       }
+    }
+  }
+  table {
+    border-color: var(--gray-text) !important;
+    thead {
+      border-color: var(--gray-text) !important;
+    }
+    th {
+      background-color: var(--bg-s2) !important;
+      border-color: var(--gray-text) !important;
+    }
+    td {
+      b {
+        color: var(--gray-text) !important;
+        a {
+          display: block;
+          margin-left: -5px;
+          margin-right: -5px;
+          margin-top: -5px;
+          padding: 10px 10px !important;
+          background-color: var(--bg-s2) !important;
+          color: #8a8fa8 !important;
+        }
+      }
+      border-color: var(--gray-text) !important;
+      &[lang="lichtheotuan-buoisang"],
+      &[lang="lichtheotuan-buoichieu"],
+      &[lang="lichtheotuan-buoitoi"] {
+        background-color: var(--bg-s2) !important;
+      }
+      & > div[type="calendar-exam"] {
+        background: linear-gradient(
+          135deg,
+          var(--pink) 0,
+          var(--purple) 100%
+        ) !important;
+      }
+      & > div[type="calendar-goschool"] {
+        background: linear-gradient(
+          135deg,
+          var(--green) 0,
+          var(--purple) 100%
+        ) !important;
+        p[lang],
+        span[lang] {
+          color: var(--yellow) !important;
+        }
+      }
+      & > div {
+        border: unset !important;
+      }
+    }
+    th {
+      border-color: var(--gray-text) !important;
+      color: var(--purple) !important;
     }
   }
   .user-account-info.dropdown-menu {

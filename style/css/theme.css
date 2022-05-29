@@ -1,14 +1,19 @@
 :root {
   --bg: #282a36;
-  --bg-input: #1d1e26;
+  --bg-s2: #22212c;
+  --bg-input: #40455a;
   --pink: #ff79c6;
   --purple: #bd93f9;
   --red: #ff5555;
   --green: #50fa7b;
   --primary-text: #f8f8f2;
+  --gray-text: #8a8fa8;
   --blue: #383a59;
   --orange: #ffb86c;
-  --boder: #4c5067;
+  --yellow: #ffff80;
+  --border: #4c5067;
+  --cyan: #80ffea;
+  --pl-holder: #a9aec3;
 }
 
 .theme--dracula {
@@ -19,6 +24,21 @@
   -webkit-user-drag: none;
   background-color: var(--bg) !important;
   color: #ff5555 !important;
+}
+
+.theme--dracula .btn.btn-action {
+  color: #000 !important;
+  background: linear-gradient(135deg, var(--purple) 0, var(--cyan) 100%) !important;
+}
+
+.theme--dracula .btn.btn-action i {
+  color: inherit !important;
+}
+
+.theme--dracula .btn:hover {
+  -webkit-box-shadow: 4px 4px rgba(255, 255, 255, 0.1) !important;
+          box-shadow: 4px 4px rgba(255, 255, 255, 0.1) !important;
+  opacity: 0.75 !important;
 }
 
 .theme--dracula i {
@@ -109,26 +129,48 @@
   border-color: var(--boder) !important;
 }
 
+.theme--dracula .profile-userpic > img {
+  -webkit-box-shadow: 0 0 0 4px #1d1e26, 0 0 0 6px var(--purple) !important;
+          box-shadow: 0 0 0 4px #1d1e26, 0 0 0 6px var(--purple) !important;
+}
+
+.theme--dracula .profile-userpic > .text-center {
+  padding-top: 10px;
+}
+
+.theme--dracula .profile-userpic > .text-center a {
+  color: var(--purple) !important;
+}
+
 .theme--dracula input[type="text"] {
-  border: 1px solid var(--pink) !important;
+  caret-color: var(--pink);
+  border: unset !important;
   background-color: var(--bg-input) !important;
-  color: var(--pink) !important;
+  color: var(--primary-text) !important;
 }
 
 .theme--dracula input[type="text"]::-webkit-input-placeholder {
-  color: var(--pink) !important;
+  color: var(--pl-holder) !important;
 }
 
 .theme--dracula input[type="text"]:-ms-input-placeholder {
-  color: var(--pink) !important;
+  color: var(--pl-holder) !important;
 }
 
 .theme--dracula input[type="text"]::-ms-input-placeholder {
-  color: var(--pink) !important;
+  color: var(--pl-holder) !important;
 }
 
 .theme--dracula input[type="text"]::placeholder {
-  color: var(--pink) !important;
+  color: var(--pl-holder) !important;
+}
+
+.theme--dracula input[type="text"]::-moz-selection {
+  color: var(--pink);
+}
+
+.theme--dracula input[type="text"]::selection {
+  color: var(--pink);
 }
 
 .theme--dracula i.fa.fa-search {
@@ -170,6 +212,63 @@
 }
 
 .theme--dracula .panel td[width="20%"] div.text-center {
+  color: var(--purple) !important;
+}
+
+.theme--dracula table {
+  border-color: var(--gray-text) !important;
+}
+
+.theme--dracula table thead {
+  border-color: var(--gray-text) !important;
+}
+
+.theme--dracula table th {
+  background-color: var(--bg-s2) !important;
+  border-color: var(--gray-text) !important;
+}
+
+.theme--dracula table td {
+  border-color: var(--gray-text) !important;
+}
+
+.theme--dracula table td b {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula table td b a {
+  display: block;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: -5px;
+  padding: 10px 10px !important;
+  background-color: var(--bg-s2) !important;
+  color: #8a8fa8 !important;
+}
+
+.theme--dracula table td[lang="lichtheotuan-buoisang"], .theme--dracula table td[lang="lichtheotuan-buoichieu"], .theme--dracula table td[lang="lichtheotuan-buoitoi"] {
+  background-color: var(--bg-s2) !important;
+}
+
+.theme--dracula table td > div[type="calendar-exam"] {
+  background: linear-gradient(135deg, var(--pink) 0, var(--purple) 100%) !important;
+}
+
+.theme--dracula table td > div[type="calendar-goschool"] {
+  background: linear-gradient(135deg, var(--green) 0, var(--purple) 100%) !important;
+}
+
+.theme--dracula table td > div[type="calendar-goschool"] p[lang],
+.theme--dracula table td > div[type="calendar-goschool"] span[lang] {
+  color: var(--yellow) !important;
+}
+
+.theme--dracula table td > div {
+  border: unset !important;
+}
+
+.theme--dracula table th {
+  border-color: var(--gray-text) !important;
   color: var(--purple) !important;
 }
 
