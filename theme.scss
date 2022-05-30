@@ -14,12 +14,137 @@
   --border: #4c5067;
   --cyan: #80ffea;
   --pl-holder: #a9aec3;
+  --white: #fff;
 }
 
 .theme--dracula {
   user-select: none;
   -webkit-user-drag: none;
   background-color: var(--bg) !important;
+  #contnet {
+    .col-md-2.hidden-xs {
+      & > a {
+        display: none !important;
+      }
+      .box-df {
+        box-shadow: unset !important;
+      }
+    }
+  }
+  #config-tool-cog {
+    border-radius: 4px !important;
+    background-color: var(--bg-s2) !important;
+    box-shadow: rgb(33, 34, 44) 5px 5px 2px, rgb(47, 50, 64) -5px -5px 2px !important;
+  }
+  #config-tool-options {
+    .box-df {
+      box-shadow: unset !important;
+    }
+    .changeColor {
+      display: none !important;
+    }
+  }
+  .accordion-menu {
+    a {
+      background-color: var(--bg-s2) !important;
+      border-bottom-color: var(--gray-text) !important;
+      i {
+        color: var(--purple) !important;
+      }
+    }
+    ul {
+      li {
+        &:first-child > a {
+          color: var(--pink) !important;
+          font-weight: 600;
+          border-top-left-radius: 6px !important;
+          border-top-right-radius: 6px !important;
+        }
+        &:nth-child(5) > a {
+          border-bottom-left-radius: 6px !important;
+          border-bottom-right-radius: 6px !important;
+          border-bottom: unset;
+        }
+        ul.submenu {
+          & > li:hover {
+            a {
+              border-left-color: var(--purple) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mt-radio {
+    span {
+      background-color: var(--purple) !important;
+      &::after {
+        background-color: var(--white) !important;
+      }
+    }
+  }
+  .k-widget.k-datepicker.k-header {
+    border-radius: 6px !important;
+    overflow: hidden;
+    span {
+      border: unset !important;
+    }
+  }
+  #viewLichTheoTuan {
+    .tamngung {
+      span {
+        background: linear-gradient(to left, var(--red), #3a2e42) !important;
+        &::before {
+          border-left-color: var(--red);
+        }
+        &::after {
+          border-right-color: var(--red);
+        }
+      }
+    }
+    .tableGC {
+      ul {
+        li {
+          span {
+            border-radius: 2px !important;
+            border: unset !important;
+          }
+          &:nth-child(1) {
+            span {
+              background: linear-gradient(to left, #38ef7d, #11998e) !important;
+            }
+          }
+          &:nth-child(2) {
+            span {
+              background: linear-gradient(
+                135deg,
+                var(--pink) 0,
+                var(--purple) 100%
+              ) !important;
+            }
+          }
+          &:nth-child(3) {
+            span {
+              background: linear-gradient(
+                135deg,
+                var(--pink) 0,
+                var(--red) 100%
+              ) !important;
+            }
+          }
+          &:nth-child(4) {
+            span {
+              background: linear-gradient(
+                to left,
+                var(--red),
+                #3a2e42
+              ) !important;
+            }
+          }
+        }
+      }
+    }
+  }
   .btn {
     &.btn-action {
       color: #000 !important;
@@ -200,13 +325,20 @@
         background: linear-gradient(
           135deg,
           var(--pink) 0,
-          var(--purple) 100%
+          var(--red) 100%
         ) !important;
       }
       & > div[type="calendar-goschool"] {
+        background: linear-gradient(to left, #38ef7d, #11998e) !important;
+        p[lang],
+        span[lang] {
+          color: var(--yellow) !important;
+        }
+      }
+      & > div[type="calendar-studyonline"] {
         background: linear-gradient(
           135deg,
-          var(--green) 0,
+          var(--pink) 0,
           var(--purple) 100%
         ) !important;
         p[lang],

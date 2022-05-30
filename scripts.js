@@ -4,18 +4,20 @@ const idChangeDate = '#dateNgayXemLich';
 const idChangeDateBack = '#btn_TroVe';
 const idChangeDateNext = '#btn_Tiep';
 const idCalendarWeek = '#viewLichTheoTuan';
-const elementsInput = document.querySelectorAll('input');
+let runOnce = false;
 
 wrap.classList.add(themeDefault);
 
 document.addEventListener('DOMContentLoaded', function() {
-
-  ('forEach' in elementsInput) && elementsInput.forEach(ele => {
+  
+  const elementsInput = document.querySelectorAll('input');
+  
+  elementsInput && elementsInput.forEach(ele => {
     ele.setAttribute('spellcheck', false);
   })
-
+  
   document.querySelector(idCalendarWeek).addEventListener("DOMNodeInserted", function () {
-
+    
     const elementsCalendar = document.querySelectorAll('#viewLichTheoTuan table td > div.content.text-left');
 
     elementsCalendar.forEach(ele => {
@@ -24,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         ele.setAttribute('type', 'calendar-exam');
       }else if(color === 'rgb(231, 236, 240)') {
         ele.setAttribute('type', 'calendar-goschool');
+      }else if(color === 'rgb(146, 214, 255)') {
+        ele.setAttribute('type', 'calendar-studyonline');
       }
     })
 

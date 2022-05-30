@@ -14,6 +14,7 @@
   --border: #4c5067;
   --cyan: #80ffea;
   --pl-holder: #a9aec3;
+  --white: #fff;
 }
 
 .theme--dracula {
@@ -24,6 +25,110 @@
   -webkit-user-drag: none;
   background-color: var(--bg) !important;
   color: #ff5555 !important;
+}
+
+.theme--dracula #contnet .col-md-2.hidden-xs > a {
+  display: none !important;
+}
+
+.theme--dracula #contnet .col-md-2.hidden-xs .box-df {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.theme--dracula #config-tool-cog {
+  border-radius: 4px !important;
+  background-color: var(--bg-s2) !important;
+  -webkit-box-shadow: #21222c 5px 5px 2px, #2f3240 -5px -5px 2px !important;
+          box-shadow: #21222c 5px 5px 2px, #2f3240 -5px -5px 2px !important;
+}
+
+.theme--dracula #config-tool-options .box-df {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.theme--dracula #config-tool-options .changeColor {
+  display: none !important;
+}
+
+.theme--dracula .accordion-menu a {
+  background-color: var(--bg-s2) !important;
+  border-bottom-color: var(--gray-text) !important;
+}
+
+.theme--dracula .accordion-menu a i {
+  color: var(--purple) !important;
+}
+
+.theme--dracula .accordion-menu ul li:first-child > a {
+  color: var(--pink) !important;
+  font-weight: 600;
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+}
+
+.theme--dracula .accordion-menu ul li:nth-child(5) > a {
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  border-bottom: unset;
+}
+
+.theme--dracula .accordion-menu ul li ul.submenu > li:hover a {
+  border-left-color: var(--purple) !important;
+}
+
+.theme--dracula .mt-radio span {
+  background-color: var(--purple) !important;
+}
+
+.theme--dracula .mt-radio span::after {
+  background-color: var(--white) !important;
+}
+
+.theme--dracula .k-widget.k-datepicker.k-header {
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.theme--dracula .k-widget.k-datepicker.k-header span {
+  border: unset !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tamngung span {
+  background: -webkit-gradient(linear, right top, left top, from(var(--red)), to(#3a2e42)) !important;
+  background: linear-gradient(to left, var(--red), #3a2e42) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tamngung span::before {
+  border-left-color: var(--red);
+}
+
+.theme--dracula #viewLichTheoTuan .tamngung span::after {
+  border-right-color: var(--red);
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li span {
+  border-radius: 2px !important;
+  border: unset !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(1) span {
+  background: -webkit-gradient(linear, right top, left top, from(#38ef7d), to(#11998e)) !important;
+  background: linear-gradient(to left, #38ef7d, #11998e) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(2) span {
+  background: linear-gradient(135deg, var(--pink) 0, var(--purple) 100%) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(3) span {
+  background: linear-gradient(135deg, var(--pink) 0, var(--red) 100%) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(4) span {
+  background: -webkit-gradient(linear, right top, left top, from(var(--red)), to(#3a2e42)) !important;
+  background: linear-gradient(to left, var(--red), #3a2e42) !important;
 }
 
 .theme--dracula .btn.btn-action {
@@ -251,15 +356,25 @@
 }
 
 .theme--dracula table td > div[type="calendar-exam"] {
-  background: linear-gradient(135deg, var(--pink) 0, var(--purple) 100%) !important;
+  background: linear-gradient(135deg, var(--pink) 0, var(--red) 100%) !important;
 }
 
 .theme--dracula table td > div[type="calendar-goschool"] {
-  background: linear-gradient(135deg, var(--green) 0, var(--purple) 100%) !important;
+  background: -webkit-gradient(linear, right top, left top, from(#38ef7d), to(#11998e)) !important;
+  background: linear-gradient(to left, #38ef7d, #11998e) !important;
 }
 
 .theme--dracula table td > div[type="calendar-goschool"] p[lang],
 .theme--dracula table td > div[type="calendar-goschool"] span[lang] {
+  color: var(--yellow) !important;
+}
+
+.theme--dracula table td > div[type="calendar-studyonline"] {
+  background: linear-gradient(135deg, var(--pink) 0, var(--purple) 100%) !important;
+}
+
+.theme--dracula table td > div[type="calendar-studyonline"] p[lang],
+.theme--dracula table td > div[type="calendar-studyonline"] span[lang] {
   color: var(--yellow) !important;
 }
 
