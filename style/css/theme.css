@@ -27,6 +27,122 @@
   color: #ff5555 !important;
 }
 
+.theme--dracula *::-webkit-scrollbar {
+  width: 10px;
+}
+
+.theme--dracula *::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.theme--dracula *::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  background-color: var(--purple);
+}
+
+.theme--dracula #xemDiem_aaa td[level="very-good"],
+.theme--dracula #xemDiem_aaa span[level="very-good"] {
+  color: var(--green) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="very-good"] + [title="XepLoai"],
+.theme--dracula #xemDiem_aaa span[level="very-good"] + [title="XepLoai"] {
+  color: var(--green) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="good"],
+.theme--dracula #xemDiem_aaa span[level="good"] {
+  color: var(--cyan) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="good"] + [title="XepLoai"],
+.theme--dracula #xemDiem_aaa span[level="good"] + [title="XepLoai"] {
+  color: var(--cyan) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="very-pretty"],
+.theme--dracula #xemDiem_aaa span[level="very-pretty"] {
+  color: var(--purple) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="very-pretty"] + [title="XepLoai"],
+.theme--dracula #xemDiem_aaa span[level="very-pretty"] + [title="XepLoai"] {
+  color: var(--purple) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="pretty"],
+.theme--dracula #xemDiem_aaa span[level="pretty"] {
+  color: var(--cyan) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="pretty"] + [title="XepLoai"],
+.theme--dracula #xemDiem_aaa span[level="pretty"] + [title="XepLoai"] {
+  color: var(--cyan) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="normal"],
+.theme--dracula #xemDiem_aaa span[level="normal"] {
+  color: var(--yellow) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="normal"] + [title="XepLoai"],
+.theme--dracula #xemDiem_aaa span[level="normal"] + [title="XepLoai"] {
+  color: var(--yellow) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="weak"],
+.theme--dracula #xemDiem_aaa span[level="weak"] {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[level="weak"] + [title="XepLoai"],
+.theme--dracula #xemDiem_aaa span[level="weak"] + [title="XepLoai"] {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[colspan="27"] {
+  background-color: var(--bg-s2) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[colspan="2"] {
+  color: var(--white) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[colspan="2"] > span:nth-child(2):not([level]) {
+  color: var(--purple) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[title="DiemChuyenCan1"], .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo11"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo12"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo13"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo14"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy6"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy7"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy8"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy9"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh1"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh2"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh3"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh4"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh5"], .theme--dracula #xemDiem_aaa td[title="DiemTBQuaTrinh"], .theme--dracula #xemDiem_aaa td[title="DiemThi"], .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"] {
+  color: var(--white) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[title="DiemChuyenCan1"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo11"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo12"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo13"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo14"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy6"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy7"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy8"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy9"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh1"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh2"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh3"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh4"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh5"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemTBQuaTrinh"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThi"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"].cl-red {
+  color: var(--red) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[title="DiemTongKet"], .theme--dracula #xemDiem_aaa td[title="DiemTinChi"] {
+  color: var(--purple) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[title="DiemChu"][level="very-weak"] {
+  color: var(--red) !important;
+}
+
+.theme--dracula #xemDiem_aaa td[title="DiemChu"][level="very-weak"] + [title="XepLoai"] {
+  color: var(--red) !important;
+}
+
+.theme--dracula #xemDiem_aaa tr td:nth-child(2) > div {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #xemDiem_aaa tr td.text-left div {
+  color: var(--green) !important;
+}
+
 .theme--dracula #contnet .col-md-2.hidden-xs > a {
   display: none !important;
 }
