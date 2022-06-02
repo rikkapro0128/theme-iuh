@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --bg: #282a36;
   --bg-s2: #22212c;
@@ -27,6 +28,10 @@
   color: #ff5555 !important;
 }
 
+.theme--dracula * {
+  font-family: "Pacifico", cursive;
+}
+
 .theme--dracula *::-webkit-scrollbar {
   width: 10px;
 }
@@ -41,6 +46,22 @@
   border: 2px solid transparent;
   background-clip: content-box;
   background-color: var(--purple);
+}
+
+.theme--dracula #xemDiem_aaa {
+  border: none !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 10px !important;
+}
+
+.theme--dracula #xemDiem_aaa th {
+  color: var(--purple);
+  border: none !important;
+}
+
+.theme--dracula #xemDiem_aaa > * {
+  background-color: transparent !important;
 }
 
 .theme--dracula #xemDiem_aaa td[level="very-good"],
@@ -103,8 +124,12 @@
   color: var(--orange) !important;
 }
 
+.theme--dracula #xemDiem_aaa td {
+  border: none !important;
+}
+
 .theme--dracula #xemDiem_aaa td[colspan="27"] {
-  background-color: var(--bg-s2) !important;
+  background-color: transparent !important;
 }
 
 .theme--dracula #xemDiem_aaa td[colspan="2"] {
@@ -135,11 +160,24 @@
   color: var(--red) !important;
 }
 
-.theme--dracula #xemDiem_aaa tr td:nth-child(2) > div {
+.theme--dracula #xemDiem_aaa tbody tr {
+  cursor: pointer;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  border-top: 16px solid transparent !important;
+  border-radius: 8px;
+}
+
+.theme--dracula #xemDiem_aaa tbody tr:hover {
+  -webkit-box-shadow: 10px 10px 20px #232530, -10px -10px 20px #2d2f3c;
+          box-shadow: 10px 10px 20px #232530, -10px -10px 20px #2d2f3c;
+}
+
+.theme--dracula #xemDiem_aaa tbody tr td:nth-child(2) > div {
   color: var(--orange) !important;
 }
 
-.theme--dracula #xemDiem_aaa tr td.text-left div {
+.theme--dracula #xemDiem_aaa tbody tr td.text-left div {
   color: var(--green) !important;
 }
 
@@ -342,10 +380,6 @@
   background-color: var(--bg) !important;
 }
 
-.theme--dracula .box-df:hover {
-  background: linear-gradient(145deg, #242631, #2b2d3a) !important;
-}
-
 .theme--dracula .portlet-title {
   border-color: var(--boder) !important;
 }
@@ -436,28 +470,28 @@
   color: var(--purple) !important;
 }
 
-.theme--dracula table {
+.theme--dracula #viewLichTheoTuan table {
   border-color: var(--gray-text) !important;
 }
 
-.theme--dracula table thead {
+.theme--dracula #viewLichTheoTuan table thead {
   border-color: var(--gray-text) !important;
 }
 
-.theme--dracula table th {
+.theme--dracula #viewLichTheoTuan table th {
   background-color: var(--bg-s2) !important;
   border-color: var(--gray-text) !important;
 }
 
-.theme--dracula table td {
+.theme--dracula #viewLichTheoTuan table td {
   border-color: var(--gray-text) !important;
 }
 
-.theme--dracula table td b {
+.theme--dracula #viewLichTheoTuan table td b {
   color: var(--gray-text) !important;
 }
 
-.theme--dracula table td b a {
+.theme--dracula #viewLichTheoTuan table td b a {
   display: block;
   margin-left: -5px;
   margin-right: -5px;
@@ -467,38 +501,38 @@
   color: #8a8fa8 !important;
 }
 
-.theme--dracula table td[lang="lichtheotuan-buoisang"], .theme--dracula table td[lang="lichtheotuan-buoichieu"], .theme--dracula table td[lang="lichtheotuan-buoitoi"] {
+.theme--dracula #viewLichTheoTuan table td[lang="lichtheotuan-buoisang"], .theme--dracula #viewLichTheoTuan table td[lang="lichtheotuan-buoichieu"], .theme--dracula #viewLichTheoTuan table td[lang="lichtheotuan-buoitoi"] {
   background-color: var(--bg-s2) !important;
 }
 
-.theme--dracula table td > div[type="calendar-exam"] {
+.theme--dracula #viewLichTheoTuan table td > div[type="calendar-exam"] {
   background: linear-gradient(135deg, var(--pink) 0, var(--red) 100%) !important;
 }
 
-.theme--dracula table td > div[type="calendar-goschool"] {
+.theme--dracula #viewLichTheoTuan table td > div[type="calendar-goschool"] {
   background: -webkit-gradient(linear, right top, left top, from(#38ef7d), to(#11998e)) !important;
   background: linear-gradient(to left, #38ef7d, #11998e) !important;
 }
 
-.theme--dracula table td > div[type="calendar-goschool"] p[lang],
-.theme--dracula table td > div[type="calendar-goschool"] span[lang] {
+.theme--dracula #viewLichTheoTuan table td > div[type="calendar-goschool"] p[lang],
+.theme--dracula #viewLichTheoTuan table td > div[type="calendar-goschool"] span[lang] {
   color: var(--yellow) !important;
 }
 
-.theme--dracula table td > div[type="calendar-studyonline"] {
+.theme--dracula #viewLichTheoTuan table td > div[type="calendar-studyonline"] {
   background: linear-gradient(135deg, var(--pink) 0, var(--purple) 100%) !important;
 }
 
-.theme--dracula table td > div[type="calendar-studyonline"] p[lang],
-.theme--dracula table td > div[type="calendar-studyonline"] span[lang] {
+.theme--dracula #viewLichTheoTuan table td > div[type="calendar-studyonline"] p[lang],
+.theme--dracula #viewLichTheoTuan table td > div[type="calendar-studyonline"] span[lang] {
   color: var(--yellow) !important;
 }
 
-.theme--dracula table td > div {
+.theme--dracula #viewLichTheoTuan table td > div {
   border: unset !important;
 }
 
-.theme--dracula table th {
+.theme--dracula #viewLichTheoTuan table th {
   border-color: var(--gray-text) !important;
   color: var(--purple) !important;
 }
