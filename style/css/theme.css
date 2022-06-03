@@ -28,11 +28,97 @@
   color: #ff5555 !important;
 }
 
+.theme--dracula a {
+  text-decoration: none !important;
+}
+
+.theme--dracula .k-animation-container {
+  background-color: transparent !important;
+  margin-top: 14px !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  background-color: inherit !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] {
+  background-color: var(--bg-s2) !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--gray-text) !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] .k-header {
+  background-color: inherit !important;
+  background-image: none !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] .k-header a {
+  background-image: none !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] .k-header a:hover {
+  background-color: inherit !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] .k-header a[aria-live="assertive"] {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] table {
+  background-color: inherit !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] table thead tr:first-child th {
+  background-color: inherit !important;
+  color: var(--gray-text) !important;
+  border-bottom-color: var(--gray-text) !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] table tbody tr td {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: var(--gray-text) !important;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] table tbody tr td.k-state-selected {
+  background-color: var(--green) !important;
+  color: var(--white) !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] table tbody tr td:hover {
+  background-color: var(--green) !important;
+  color: var(--white) !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] table tbody tr td > * {
+  color: inherit !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] .k-footer {
+  background-color: inherit !important;
+}
+
+.theme--dracula .k-animation-container #dateNgayXemLich_dateview > div[data-role="calendar"] .k-footer a {
+  background-color: inherit !important;
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula .portlet {
+  background-color: transparent !important;
+}
+
 .theme--dracula * {
   font-family: "Pacifico", cursive;
 }
 
 .theme--dracula *::-webkit-scrollbar {
+  height: 10px;
   width: 10px;
 }
 
@@ -45,7 +131,7 @@
   border-radius: 100px;
   border: 2px solid transparent;
   background-clip: content-box;
-  background-color: var(--purple);
+  background-color: var(--bg);
 }
 
 .theme--dracula #xemDiem_aaa {
@@ -232,6 +318,10 @@
   border-left-color: var(--purple) !important;
 }
 
+.theme--dracula .mt-radio label {
+  color: var(--gray-text) !important;
+}
+
 .theme--dracula .mt-radio span {
   background-color: var(--purple) !important;
 }
@@ -243,46 +333,17 @@
 .theme--dracula .k-widget.k-datepicker.k-header {
   border-radius: 6px !important;
   overflow: hidden;
+  background-color: transparent !important;
+  border: 1px solid var(--gray-text) !important;
 }
 
 .theme--dracula .k-widget.k-datepicker.k-header span {
+  padding-bottom: 0 !important;
   border: unset !important;
 }
 
-.theme--dracula #viewLichTheoTuan .tamngung span {
-  background: -webkit-gradient(linear, right top, left top, from(var(--red)), to(#3a2e42)) !important;
-  background: linear-gradient(to left, var(--red), #3a2e42) !important;
-}
-
-.theme--dracula #viewLichTheoTuan .tamngung span::before {
-  border-left-color: var(--red);
-}
-
-.theme--dracula #viewLichTheoTuan .tamngung span::after {
-  border-right-color: var(--red);
-}
-
-.theme--dracula #viewLichTheoTuan .tableGC ul li span {
-  border-radius: 2px !important;
-  border: unset !important;
-}
-
-.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(1) span {
-  background: -webkit-gradient(linear, right top, left top, from(#38ef7d), to(#11998e)) !important;
-  background: linear-gradient(to left, #38ef7d, #11998e) !important;
-}
-
-.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(2) span {
-  background: linear-gradient(135deg, var(--pink) 0, var(--purple) 100%) !important;
-}
-
-.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(3) span {
-  background: linear-gradient(135deg, var(--pink) 0, var(--red) 100%) !important;
-}
-
-.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(4) span {
-  background: -webkit-gradient(linear, right top, left top, from(var(--red)), to(#3a2e42)) !important;
-  background: linear-gradient(to left, var(--red), #3a2e42) !important;
+.theme--dracula .k-widget.k-datepicker.k-header input {
+  color: var(--gray-text) !important;
 }
 
 .theme--dracula .btn.btn-action {
@@ -362,7 +423,8 @@
   color: var(--green);
 }
 
-.theme--dracula span.bold {
+.theme--dracula span.bold,
+.theme--dracula b {
   color: var(--primary-text);
 }
 
@@ -382,6 +444,13 @@
 
 .theme--dracula .portlet-title {
   border-color: var(--boder) !important;
+}
+
+.theme--dracula .portlet-title .actions .mt-radio-inline {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-right: 2rem;
 }
 
 .theme--dracula .profile-userpic > img {
@@ -470,12 +539,93 @@
   color: var(--purple) !important;
 }
 
+.theme--dracula #viewLichTheoTuan {
+  background-color: transparent !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tamngung span {
+  background: -webkit-gradient(linear, right top, left top, from(var(--red)), to(#3a2e42)) !important;
+  background: linear-gradient(to left, var(--red), #3a2e42) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tamngung span::before {
+  border-left-color: var(--red);
+}
+
+.theme--dracula #viewLichTheoTuan .tamngung span::after {
+  border-right-color: var(--red);
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li label {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li span {
+  border-radius: 2px !important;
+  border: unset !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(1) span {
+  background: -webkit-gradient(linear, right top, left top, from(#38ef7d), to(#11998e)) !important;
+  background: linear-gradient(to left, #38ef7d, #11998e) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(2) span {
+  background: linear-gradient(135deg, var(--pink) 0, var(--purple) 100%) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(3) span {
+  background: linear-gradient(135deg, var(--pink) 0, var(--red) 100%) !important;
+}
+
+.theme--dracula #viewLichTheoTuan .tableGC ul li:nth-child(4) span {
+  background: -webkit-gradient(linear, right top, left top, from(var(--red)), to(#3a2e42)) !important;
+  background: linear-gradient(to left, var(--red), #3a2e42) !important;
+}
+
 .theme--dracula #viewLichTheoTuan table {
   border-color: var(--gray-text) !important;
+  display: block !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
 }
 
 .theme--dracula #viewLichTheoTuan table thead {
-  border-color: var(--gray-text) !important;
+  border: none !important;
+}
+
+.theme--dracula #viewLichTheoTuan table thead tr[role="row"]:first-child th {
+  border-bottom: none !important;
+}
+
+.theme--dracula #viewLichTheoTuan table thead tr[role="row"]:first-child th:first-child {
+  border-top: none !important;
+  border-left: none !important;
+}
+
+.theme--dracula #viewLichTheoTuan table thead tr[role="row"]:first-child th:last-child {
+  border-top: none !important;
+  border-right: none !important;
+}
+
+.theme--dracula #viewLichTheoTuan table tbody tr[role="row"]:last-child td {
+  border-bottom: none !important;
+}
+
+.theme--dracula #viewLichTheoTuan table tbody tr[role="row"] td:first-child {
+  color: var(--purple) !important;
+}
+
+.theme--dracula #viewLichTheoTuan table tbody tr[role="row"] td:first-child b {
+  color: inherit !important;
+}
+
+.theme--dracula #viewLichTheoTuan table tbody tr[role="row"] td:first-child {
+  border-left: none !important;
+}
+
+.theme--dracula #viewLichTheoTuan table tbody tr[role="row"] td:last-child {
+  border-right: none !important;
 }
 
 .theme--dracula #viewLichTheoTuan table th {
