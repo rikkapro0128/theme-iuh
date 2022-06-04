@@ -16,6 +16,110 @@
   --cyan: #80ffea;
   --pl-holder: #a9aec3;
   --white: #fff;
+  --color-background: rgb(237, 241, 245);
+  --color-foreground: rgb(250, 250, 250);
+  --color-foreground-grey: rgb(245, 246, 246);
+  --color-foreground-grey-dark: rgb(234, 236, 237);
+  --color-foreground-blue: rgb(246, 248, 251);
+  --color-foreground-blue-dark: rgb(241, 243, 247);
+  --color-background-blue-dark: rgb(31, 35, 45);
+  --color-overlay: rgb(31, 38, 49);
+  --color-shadow: rgb(49, 54, 68);
+  --color-shadow-dark: rgb(6, 13, 34);
+  --color-shadow-blue: rgb(103, 132, 187);
+  --color-text: rgb(92, 114, 138);
+  --color-text-light: rgb(122, 133, 143);
+  --color-text-lighter: rgb(146, 153, 161);
+  --color-text-bright: rgb(237, 241, 245);
+  --color-blue: rgb(61, 180, 242);
+  --color-blue-dim: rgb(141, 178, 219);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-red: rgb(232, 93, 117);
+  --color-peach: rgb(250, 122, 122);
+  --color-orange: rgb(247, 154, 99);
+  --color-yellow: rgb(247, 191, 99);
+  --color-green: rgb(123, 213, 85);
+  --color-background-100: rgb(251, 251, 251);
+  --color-background-200: rgb(237, 241, 245);
+  --color-background-300: rgb(221, 230, 238);
+  --color-background-400: rgb(201, 215, 227);
+  --color-background-500: rgb(173, 192, 210);
+  --color-background-600: rgb(139, 160, 178);
+  --color-background-700: rgb(116, 136, 153);
+  --color-background-800: rgb(100, 115, 128);
+  --color-background-900: rgb(81, 97, 112);
+  --color-background-1000: rgb(64, 78, 92);
+  --color-background-1100: rgb(38, 52, 63);
+  --color-background-1200: rgb(27, 30, 31);
+  --color-gray-100: rgb(251, 251, 251);
+  --color-gray-200: rgb(237, 241, 245);
+  --color-gray-300: rgb(221, 230, 238);
+  --color-gray-400: rgb(201, 215, 227);
+  --color-gray-500: rgb(173, 192, 210);
+  --color-gray-600: rgb(139, 160, 178);
+  --color-gray-700: rgb(116, 136, 153);
+  --color-gray-800: rgb(100, 115, 128);
+  --color-gray-900: rgb(81, 97, 112);
+  --color-gray-1000: rgb(64, 78, 92);
+  --color-gray-1100: rgb(38, 52, 63);
+  --color-gray-1200: rgb(27, 30, 31);
+  --color-blue-100: rgb(247, 250, 252);
+  --color-blue-200: rgb(236, 246, 254);
+  --color-blue-300: rgb(201, 232, 255);
+  --color-blue-400: rgb(143, 215, 255);
+  --color-blue-500: rgb(111, 200, 255);
+  --color-blue-600: rgb(61, 180, 242);
+  --color-blue-700: rgb(8, 143, 214);
+  --color-blue-800: rgb(12, 101, 166);
+  --color-blue-900: rgb(11, 70, 113);
+  --color-blue-1000: rgb(16, 61, 85);
+  --color-green-100: rgb(245, 249, 243);
+  --color-green-200: rgb(226, 246, 217);
+  --color-green-300: rgb(160, 241, 126);
+  --color-green-400: rgb(119, 220, 76);
+  --color-green-500: rgb(83, 175, 45);
+  --color-green-600: rgb(56, 126, 26);
+  --color-green-700: rgb(46, 90, 27);
+  --color-green-800: rgb(41, 66, 31);
+  --color-red-100: rgb(255, 244, 246);
+  --color-red-200: rgb(254, 212, 220);
+  --color-red-300: rgb(255, 140, 160);
+  --color-red-400: rgb(236, 41, 75);
+  --color-red-500: rgb(213, 0, 37);
+  --color-red-600: rgb(165, 1, 29);
+  --color-red-700: rgb(117, 0, 20);
+  --color-purple-100: rgb(239, 201, 255);
+}
+
+@-webkit-keyframes loadInit {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.92);
+            transform: scale(0.92);
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes loadInit {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.92);
+            transform: scale(0.92);
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 html {
@@ -33,6 +137,85 @@ html {
   -webkit-user-drag: none;
   background-color: var(--bg) !important;
   color: #ff5555 !important;
+}
+
+.theme--dracula #toast-container > div.toast {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--white) !important;
+}
+
+.theme--dracula #toast-container > div.toast.toast-warning {
+  background-color: var(--color-orange) !important;
+}
+
+.theme--dracula #toast-container > div.toast.toast-success {
+  background-color: var(--color-green) !important;
+}
+
+.theme--dracula #toast-container > div.toast.toast-error {
+  background-color: var(--color-red) !important;
+}
+
+.theme--dracula #dialog {
+  overflow: auto !important;
+  border-radius: 10px !important;
+  background-color: var(--bg) !important;
+  border: 1px solid var(--color-green-300) !important;
+}
+
+.theme--dracula #dialog .closePopup {
+  border-bottom-left-radius: 10px !important;
+  background-color: var(--color-green-300) !important;
+  width: 50px !important;
+  height: 30px !important;
+}
+
+.theme--dracula #dialog .form-group input {
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+  caret-color: var(--color-green-300);
+  background-color: var(--bg-input) !important;
+  color: var(--primary-text) !important;
+  border: unset !important;
+}
+
+.theme--dracula #dialog .form-group input::-webkit-input-placeholder {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula #dialog .form-group input:-ms-input-placeholder {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula #dialog .form-group input::-ms-input-placeholder {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula #dialog .form-group input::placeholder {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula #dialog .form-group input::-moz-selection {
+  color: var(--color-green-300);
+}
+
+.theme--dracula #dialog .form-group input::selection {
+  color: var(--color-green-300);
+}
+
+.theme--dracula #dialog .form-group .control-label {
+  color: var(--color-green-300) !important;
+}
+
+.theme--dracula #dialog .form-group .control-label span {
+  color: var(--red) !important;
+}
+
+.theme--dracula #dialog .actions button.btn.btn-action {
+  background: var(--color-green-300) !important;
+  color: var(--bg) !important;
 }
 
 .theme--dracula #miru-mouse-move--outer {
@@ -202,7 +385,7 @@ html {
 }
 
 .theme--dracula #xemDiem_aaa th {
-  color: var(--purple);
+  color: var(--color-purple-100) !important;
   border: none !important;
 }
 
@@ -276,19 +459,19 @@ html {
 
 .theme--dracula #xemDiem_aaa td[colspan="27"] {
   background-color: transparent !important;
-  color: var(--pink) !important;
+  color: var(--color-green-300) !important;
 }
 
 .theme--dracula #xemDiem_aaa td[colspan="2"] {
-  color: var(--white) !important;
+  color: var(--color-green-200) !important;
 }
 
 .theme--dracula #xemDiem_aaa td[colspan="2"] > span:nth-child(2):not([level]) {
-  color: var(--purple) !important;
+  color: var(--color-green-300) !important;
 }
 
 .theme--dracula #xemDiem_aaa td[title="DiemChuyenCan1"], .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo11"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo12"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo13"], .theme--dracula #xemDiem_aaa td[title="DiemHeSo14"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy6"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy7"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy8"], .theme--dracula #xemDiem_aaa td[title="DiemThuongKy9"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh1"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh2"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh3"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh4"], .theme--dracula #xemDiem_aaa td[title="DiemThucHanh5"], .theme--dracula #xemDiem_aaa td[title="DiemTBQuaTrinh"], .theme--dracula #xemDiem_aaa td[title="DiemThi"], .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"] {
-  color: var(--white) !important;
+  color: var(--color-green-200) !important;
 }
 
 .theme--dracula #xemDiem_aaa td[title="DiemChuyenCan1"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo11"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo12"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo13"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemHeSo14"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy6"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy7"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy8"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThuongKy9"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh1"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh2"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh3"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh4"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThucHanh5"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemTBQuaTrinh"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemThi"].cl-red, .theme--dracula #xemDiem_aaa td[title="DiemChuyenCanE"].cl-red {
@@ -321,11 +504,12 @@ html {
 }
 
 .theme--dracula #xemDiem_aaa tbody tr td:nth-child(2) > div {
-  color: var(--orange) !important;
+  color: var(--color-green-200) !important;
 }
 
 .theme--dracula #xemDiem_aaa tbody tr td.text-left div {
-  color: var(--green) !important;
+  font-weight: 600;
+  color: var(--color-green-300) !important;
 }
 
 .theme--dracula #contnet .col-md-2.hidden-xs > a {
@@ -490,7 +674,7 @@ html {
 }
 
 .theme--dracula .caption-subject.bold {
-  color: var(--pink) !important;
+  color: var(--color-green-300) !important;
 }
 
 .theme--dracula .box-df {
@@ -501,10 +685,12 @@ html {
   -webkit-box-shadow: 5px 5px 2px #21222c, -5px -5px 2px #2f3240 !important;
           box-shadow: 5px 5px 2px #21222c, -5px -5px 2px #2f3240 !important;
   background-color: var(--bg) !important;
+  -webkit-animation: loadInit 0.3s linear;
+          animation: loadInit 0.3s linear;
 }
 
 .theme--dracula .portlet-title {
-  border-color: var(--boder) !important;
+  border-color: var(--color-green-300) !important;
 }
 
 .theme--dracula .portlet-title .actions .mt-radio-inline {
@@ -515,8 +701,8 @@ html {
 }
 
 .theme--dracula .profile-userpic > img {
-  -webkit-box-shadow: 0 0 0 4px #1d1e26, 0 0 0 6px var(--purple) !important;
-          box-shadow: 0 0 0 4px #1d1e26, 0 0 0 6px var(--purple) !important;
+  -webkit-box-shadow: 0 0 0 4px #1d1e26, 0 0 0 6px var(--color-green-300) !important;
+          box-shadow: 0 0 0 4px #1d1e26, 0 0 0 6px var(--color-green-300) !important;
 }
 
 .theme--dracula .profile-userpic > .text-center {
@@ -525,6 +711,14 @@ html {
 
 .theme--dracula .profile-userpic > .text-center a {
   color: var(--purple) !important;
+}
+
+.theme--dracula .profile-userpic + div.text-center {
+  margin-top: 1.5rem;
+}
+
+.theme--dracula .profile-userpic + div.text-center a {
+  color: var(--color-green-300) !important;
 }
 
 .theme--dracula input[type="text"] {
@@ -749,19 +943,32 @@ html {
 }
 
 .theme--dracula .user-account-info.dropdown-menu {
-  border-radius: 4px !important;
-  background-color: var(--purple) !important;
+  background-color: var(--bg) !important;
   color: var(--primary-text) !important;
+  border: 1px solid var(--primary-text) !important;
+  -webkit-box-shadow: 0 0 4px var(--bg) !important;
+          box-shadow: 0 0 4px var(--bg) !important;
+  border-radius: 1rem !important;
+}
+
+.theme--dracula .user-account-info.dropdown-menu .us-links {
+  position: relative;
+  z-index: 100;
+}
+
+.theme--dracula .user-account-info.dropdown-menu .us-links > li {
+  border: none !important;
+  -webkit-transition: all 200ms ease !important;
+  transition: all 200ms ease !important;
+}
+
+.theme--dracula .user-account-info.dropdown-menu .us-links > li a {
+  color: inherit !important;
 }
 
 .theme--dracula .user-account-info.dropdown-menu .us-links > li:hover {
-  background-color: var(--bg) !important;
-}
-
-.theme--dracula .user-account-info.dropdown-menu .us-links > li:not(:last-child) {
-  border-bottom: 1px solid var(--primary-text) !important;
-  -webkit-transition: all 200ms ease !important;
-  transition: all 200ms ease !important;
+  background: inherit !important;
+  color: var(--color-green-300) !important;
 }
 
 .theme--dracula .user-account-info.dropdown-menu .us-links > li:first-child {
@@ -775,14 +982,18 @@ html {
   border-bottom: unset;
 }
 
+.theme--dracula .user-account-info.dropdown-menu::before {
+  right: 20px !important;
+}
+
 .theme--dracula .user-account-info.dropdown-menu::after {
-  position: absolute;
+  right: 21px !important;
   top: -7px;
   left: 10px;
   right: auto;
   display: inline-block !important;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid var(--purple);
+  border-bottom: 7px solid var(--bg);
   border-left: 7px solid transparent;
   content: "";
 }
