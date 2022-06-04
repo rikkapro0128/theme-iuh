@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --bg: #282a36;
   --bg-s2: #22212c;
@@ -38,7 +38,7 @@ html {
 .theme--dracula #miru-mouse-move--outer {
   -webkit-transition: all 70ms linear;
   transition: all 70ms linear;
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -61,7 +61,7 @@ html {
   transition: -webkit-transform 30ms linear;
   transition: transform 30ms linear;
   transition: transform 30ms linear, -webkit-transform 30ms linear;
-  position: absolute;
+  position: fixed;
   width: 6px;
   height: 6px;
   background-color: var(--gray-text);
@@ -276,6 +276,7 @@ html {
 
 .theme--dracula #xemDiem_aaa td[colspan="27"] {
   background-color: transparent !important;
+  color: var(--pink) !important;
 }
 
 .theme--dracula #xemDiem_aaa td[colspan="2"] {
@@ -295,7 +296,7 @@ html {
 }
 
 .theme--dracula #xemDiem_aaa td[title="DiemTongKet"], .theme--dracula #xemDiem_aaa td[title="DiemTinChi"] {
-  color: var(--purple) !important;
+  color: var(--white) !important;
 }
 
 .theme--dracula #xemDiem_aaa td[title="DiemChu"][level="very-weak"] {

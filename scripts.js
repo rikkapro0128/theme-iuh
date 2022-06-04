@@ -35,7 +35,7 @@
     function handleMouseMove(event) {
       const coordinate = {
         x: event.clientX,
-        y: event.pageY,
+        y: event.clientY,
         type: getComputedStyle(event.target, 'cursor'),
       }
       eleMouseMoveInner.style.left = coordinate.x + 'px'
