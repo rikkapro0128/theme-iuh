@@ -139,6 +139,297 @@ html {
   color: #ff5555 !important;
 }
 
+.theme--dracula .fix-menu-HP,
+.theme--dracula .fix-menu-HP * {
+  background-color: transparent !important;
+}
+
+.theme--dracula .title-table {
+  color: var(--green) !important;
+}
+
+.theme--dracula .title-table::before {
+  background: var(--white) !important;
+}
+
+.theme--dracula .title-table[lang="dangkyhocphan-lhpdadangkytabletitle"] {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.theme--dracula #tbChiTietDKHP {
+  border: none !important;
+}
+
+.theme--dracula #tbChiTietDKHP * {
+  border: none !important;
+}
+
+.theme--dracula #tbChiTietDKHP thead {
+  background-color: transparent !important;
+}
+
+.theme--dracula #tbChiTietDKHP thead tr {
+  background-color: transparent !important;
+  color: var(--color-purple-100) !important;
+}
+
+.theme--dracula #tbChiTietDKHP thead tr * {
+  color: inherit !important;
+}
+
+.theme--dracula #tbChiTietDKHP tbody td:nth-child(2) {
+  color: var(--color-green-300) !important;
+}
+
+.theme--dracula #tbChiTietDKHP tbody td:nth-child(4) {
+  color: var(--green) !important;
+}
+
+.theme--dracula #tbChiTietDKHP tbody td:nth-child(6) {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #tbChiTietDKHP tbody td:last-child {
+  color: var(--green) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky span[lang="lhpchodangky-lhpkhongtrunglich"] {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table {
+  border: none !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table * {
+  border: none !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table thead {
+  background-color: transparent !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table thead tr th {
+  color: var(--color-purple-100) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table thead tr * {
+  background-color: transparent !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr {
+  color: var(--white) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr.tr-active {
+  background-color: var(--green) !important;
+  color: var(--color-black) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr.tr-active * {
+  color: inherit;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr.tr-active td .name {
+  color: var(--gray-text) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr.tr-active td span.cl-red {
+  color: var(--color-blue) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr.tr-active td:last-child {
+  color: var(--white) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr * {
+  color: inherit;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr > td .name {
+  color: var(--white) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr > td span.cl-red {
+  color: var(--color-green-300) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_lophocphan_chodangky table tbody tr > td:last-child {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky button[lang="dkhp-xemlichtrungButton"] {
+  background-color: var(--orange) !important;
+  border-radius: 10px !important;
+  -webkit-box-shadow: 0 0 10px var(--color-orange) !important;
+          box-shadow: 0 0 10px var(--color-orange) !important;
+  margin-right: 10px;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky .text-center.has-2btn {
+  margin-bottom: 1rem !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky .text-center.has-2btn button {
+  border-radius: 10px !important;
+  color: var(--color-blue-300) !important;
+  -webkit-box-shadow: 0 0 10px var(--color-blue) !important;
+          box-shadow: 0 0 10px var(--color-blue) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky table {
+  border: none !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky table * {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky table thead tr * {
+  color: var(--color-purple-100) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky table tbody tr:not(:first-child) {
+  border-top: 1rem solid transparent !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky table tbody tr td:nth-child(2) {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky table tbody tr td:nth-child(2) * {
+  color: inherit !important;
+}
+
+.theme--dracula #lopHPChoDangKy #box_chitietlophocphan_chodangky table tbody tr td:nth-child(2) span[lang="dkhp-gv"] {
+  color: var(--green) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #btn_InDDK {
+  padding: 0.3rem 1.4rem !important;
+  line-height: 2 !important;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+  margin-top: -10px !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan {
+  border: none !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan * {
+  border: none !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan thead {
+  background-color: transparent !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan thead tr th {
+  color: var(--color-purple-100) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan thead tr * {
+  background-color: transparent !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr.tr-active {
+  background-color: #50fa7b8a !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr.tr-active td:nth-child(10), .theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr.tr-active td:nth-child(11), .theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr.tr-active td:nth-child(12) {
+  color: var(--white) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td:nth-child(2) {
+  color: var(--color-green-200) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td:nth-child(3) {
+  color: var(--color-green-300) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td:nth-child(4) {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td:nth-child(5) {
+  color: var(--white) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td button {
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td button[lang="dangkyhocphan-xem-button"] {
+  border-radius: 4px !important;
+  background-color: var(--white) !important;
+  color: var(--color-green-300) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td button[lang="dangkyhocphan-xem-button"]:hover {
+  background-color: var(--color-green-300) !important;
+  color: var(--white) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td button[lang="dangkyhocphan-huy-button"] {
+  border-radius: 4px !important;
+  background-color: var(--white) !important;
+  color: var(--color-red-300) !important;
+}
+
+.theme--dracula #box_monHocPhan_DaDangKy #dkHocPhan tbody tr > td button[lang="dangkyhocphan-huy-button"]:hover {
+  background-color: var(--color-red-300) !important;
+  color: var(--white) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky * {
+  border: none !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table thead {
+  background-color: transparent !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table thead tr th {
+  color: var(--color-purple-100) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table thead tr * {
+  background-color: transparent !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table tbody tr.tr-active {
+  background-color: var(--green) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table tbody tr.tr-active > td:nth-child(3) {
+  color: var(--white) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table tbody tr.tr-active > td:nth-child(4) {
+  color: var(--white) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table tbody tr > td .tooltip.tooltipstered {
+  color: var(--color-green-100) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table tbody tr > td span.cl-red {
+  color: var(--orange) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table tbody tr > td:nth-child(3) {
+  color: var(--color-green-100) !important;
+}
+
+.theme--dracula #box_monhocphan_chodangky table tbody tr > td:nth-child(4) {
+  color: var(--color-green-300) !important;
+}
+
 .theme--dracula #toast-container > div.toast {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -170,6 +461,20 @@ html {
   background-color: var(--color-green-300) !important;
   width: 50px !important;
   height: 30px !important;
+}
+
+.theme--dracula #dialog .btn {
+  border-radius: 10px !important;
+  background-color: var(--color-green-300) !important;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  border-color: var(--color-green-300) !important;
+}
+
+.theme--dracula #dialog .btn:hover {
+  background-color: var(--white) !important;
+  border-color: var(--color-green-300) !important;
+  color: var(--color-green-300) !important;
 }
 
 .theme--dracula #dialog .form-group input {
@@ -626,8 +931,8 @@ html {
   cursor: pointer;
   background-color: var(--bg-input) !important;
   border-radius: 4px !important;
-  border-color: var(--pink) !important;
-  color: var(--pink) !important;
+  border-color: var(--green) !important;
+  color: var(--green) !important;
 }
 
 .theme--dracula select option {
@@ -636,7 +941,7 @@ html {
 }
 
 .theme--dracula select option[selected="selected"] {
-  background-color: var(--pink) !important;
+  background-color: var(--green) !important;
   color: var(--bg-input) !important;
 }
 
